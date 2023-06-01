@@ -11,7 +11,7 @@
    * `Lizard King`: Robert, evolved
    * `Sigma`: Epic Storyteller
    * `Socrates`: The wise one?
-   * 'Dwight Schrute': Beet farmer, paper salesman
+   * `Dwight Schrute`: Beet farmer, paper salesman
    * `random`: Picks a random persona
    * 'More personas to be added later'
 
@@ -39,6 +39,7 @@
 
 ## Prerequisites to install
 
+* Need Python 3.11.3 installed
 * run ```pip3 install -r requirements.txt```
 
 
