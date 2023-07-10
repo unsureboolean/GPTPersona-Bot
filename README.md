@@ -4,7 +4,7 @@
 ## Features
 
 ### Switch Persona
-* Currently a Robert California bot, but more persona's can easily be added in the personas.py file. Make sure add the persona to the bot.py file by adding the name and value you've assigned *app_commands.Choice(name="Persona Name/Label", value="yourPersonaValue")*
+* Currently version is running with Butters Stotch as the default persona. More persona's can easily be added in the personas.py file. Make sure add the persona to the bot.py file by adding the name and value you've assigned *app_commands.Choice(name="Persona Name/Label", value="yourPersonaValue")*
 
 * /switchpersona: Switch between personas
    * `Robert California`: The man himself
@@ -25,14 +25,21 @@
 
 
 
-
 ### Mode
 
-* `public mode (default)`  RobGPT California directly replies on the channel to targeted chats
+* `public mode (default)`  GPTPersonaBot directly replies on the channel to targeted chats
 
-* `private mode` RobGPT's reply can only be seen by the person who used the command
+* `private mode` GPTPersonaBot's reply can only be seen by the person who used the command
 
-* `replyall mode` RobGPT will reply to all messages in the channel without using slash commands
+* `replyall mode` GPTPersonaBot will reply to all messages in the channel without using slash commands
+
+### Chat
+
+* `/chat` Command can be used to chat with the bot outside of replyAll mode.
+
+### Draw
+
+* In beta, currently working I think...
 
 
 # Setup
@@ -80,13 +87,13 @@
    > - Robert will occasionally forget he is Robert.  This is ok, it happens to everyone from time to time.  You may need to /reset, especially if someone has asked him to be someone else.
    > - ~~When changing modes or after a reset, Robert will exit /replyall mode but will not mention anything about it. You need to turn it off and back on to get his attention. I will adjust the message when I get time.~~ *Fixed*
      > - This introduced a bug where Robert will sometimes take longer to reply (about 20-30 seconds). Leaving it for now as it is only occasional but it needs to be investigated.
-   > - When messages get queued, RobGPT throws an error.  The messages go through as one message usually, RobGPT throws an error, but then usually responds to both messages as if they were one prompt.
+   > - ~~When messages get queued, RobGPT throws an error.  The messages go through as one message usually, RobGPT throws an error, but then usually responds to both messages as if they were one prompt.~~ *Fixed*
 
 
    > **Future implementations:**
-   > - Get RobGPT to change his nickname in the server whenever he changes personas
-   > - Get RobGPT to be able to remember session ID for chat instances so that each persona could have their own thread
-   > - Find a way for RobGPT to operate independently in each server.  Not sure if this is possible without a new API for each server.
+   > - Get GPTPersonaBot to change his nickname in the server whenever he changes personas
+   > - Get GPTPersonaBot to be able to remember session ID for chat instances so that each persona could have their own thread
+   > - Find a way for GPTPersonaBot to operate independently in each server.  Not sure if this is possible without a new API for each server.
    > - Docker support
    > - Support for GPT4All and other LLM repositories
    > - Build in feedback command for machine learning (/feedback :thumbsup: and /feedback :thumbsdown: 

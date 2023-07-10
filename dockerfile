@@ -1,4 +1,4 @@
-FROM python:3.11-bullseye
+FROM python:3.11.4
 
 ENV PYTHONUNBUFFERED 1
 RUN apt-get update && apt-get install -y \
@@ -31,8 +31,8 @@ ENV PATH="/root/.cargo/bin:${PATH}"
 RUN rustup update
 
 RUN pip3 install cryptography
-COPY ./ /GPTPersona-Bot
-WORKDIR /GPTPersona-Bot
+COPY ./ /DiscordBot
+WORKDIR /DiscordBot
 RUN pip3 install -r requirements.txt
 
 CMD ["python3", "main.py"]

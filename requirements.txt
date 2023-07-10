@@ -1,5 +1,8 @@
-discord.py==2.2.2
+discord==2.2.3
+openai==0.27.7
 python-dotenv==1.0.0
-asgiref==3.6.0
-openai==0.27.5
-revChatGPT==5.0.0
+asyncio==3.4.3
+aiohttp==3.8.4
+requests==2.31.0
+asgiref==3.7.2
+revChatGPT==6.7.8

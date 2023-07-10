@@ -1,10 +1,10 @@
 version: "3"
 
 services:
-  GPTPersona-Bot:
+  gptpersona-bot:
     build: .
-    image: GPTPersona-Bot
-    container_name: GPTPersona-Bot
+    image: gptpersona-bot
+    container_name: gptpersona-bot
     env_file:
       - .env
     restart: unless-stopped
