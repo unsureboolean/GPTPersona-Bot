@@ -13,7 +13,7 @@
    * `Socrates`: The wise one?
    * `Dwight Schrute`: Beet farmer, paper salesman
    * `random`: Picks a random persona
-   * 'More personas to be added later'
+   * `More` Frank Reynolds, Butters Stotch, Jack Sparrow
 
 * `/private` Robert will switch to private mode
 * `/public` Robert will switch to public mode
@@ -46,8 +46,17 @@
 
 ## Prerequisites to install
 
-* Need Python 3.11.3 installed
-* run ```pip3 install -r requirements.txt```
+* Python version `3.11` or higher required
+
+* You need a Discord Developer account (free) at https://discord.com/build/app-developers
+
+* You also need an OpenAI Developer account and API key (free) at https://platform.openai.com/signup
+
+* Run ```pip3 install -r requirements.txt``` from bot's root folder in terminal
+
+* Open "dotenv.example.txt" and rename to ".env" (no name, extension only) with your new API key and Bot token
+
+* Adjust the .env file with your API key and Bot token (Step 1 and 2)
 
 
 ## Step 1: Create a Discord bot
@@ -61,12 +70,11 @@
 4. Turn on all Intents in developer portal on discord
 
 
-## Step 2: OpenAI API authentication
+## Step 2: Get your OpenAI API key
 
-### Get your OpenAI API key
 1. Sign up for a Developer Account on openai.com
 
-2. Generate a new API key (Store this too)
+2. Go to https://beta.openai.com/account/api-keys and get a secret API key (Store this too)
 
 3. In the .env file, set your OpenAI API key as the `OPENAI_API_KEY` variable with no quotes or trailing lines
 
@@ -75,26 +83,24 @@
 
 1. Open a terminal, command prompt, powershell, etc.
 
-2. Navigate to the directory where you installed the RobGPT.
+2. Navigate to the directory where you installed the bot.
 
 3. Type `python main.py` to start the bot
 
 
-### The Lizard King does not eat bugs. Please report them.
+### Please help by reporting bugs!
 
-   > **Bugs**
-   > - Robert will reply to everything in replyall mode.  Make sure you turn on slowdown mode in discord because he will stop responding if he gets more requests before he has answered the last one.~~ *Implemented a messaging queue, it throws an error but it works.*
-   > - Robert will occasionally forget he is Robert.  This is ok, it happens to everyone from time to time.  You may need to /reset, especially if someone has asked him to be someone else.
-   > - ~~When changing modes or after a reset, Robert will exit /replyall mode but will not mention anything about it. You need to turn it off and back on to get his attention. I will adjust the message when I get time.~~ *Fixed*
-     > - This introduced a bug where Robert will sometimes take longer to reply (about 20-30 seconds). Leaving it for now as it is only occasional but it needs to be investigated.
-   > - ~~When messages get queued, RobGPT throws an error.  The messages go through as one message usually, RobGPT throws an error, but then usually responds to both messages as if they were one prompt.~~ *Fixed*
-
+   > **Known bugs**
+   > - The bot will reply to everything in replyall mode.  Make sure you turn on slowdown mode in discord because he will crash and stop responding if he gets more requests before he has answered the last one. Need an actual queue system and not the bs I patched together.
+     > - When messages get queued, the bot throws an error.  The messages go through as one message usually, RobGPT throws an error, but then usually responds to both messages as if they were one prompt.
+   > - The bot will occasionally forget who it is.  This is ok, it happens to all of us from time to time.  You may need to /reset or /switchpersona.
+   > - ~~When changings or after a reset, Robert will exit /replyall mode but will not mention anything about it. You need to turn it off and back on to get his attention. I will adjust the message when I get time.~~ *Fixed*
+     > - This introduced a bug where the bot will sometimes take longer to reply (about 20-30 seconds). Leaving it for now as it is only occasional but it needs to be investigated.
+   > - At one point the bot was able to talk to multiple servers and reply independantly in each one.  At some point I lost this functionality so it will need to be reinstated.
 
    > **Future implementations:**
-   > - Get GPTPersonaBot to change his nickname in the server whenever he changes personas
-   > - Get GPTPersonaBot to be able to remember session ID for chat instances so that each persona could have their own thread
-   > - Find a way for GPTPersonaBot to operate independently in each server.  Not sure if this is possible without a new API for each server.
+   > - Get GPTPersonaBot to change it's server nickname whenever he changes personas in that server
    > - Docker support
    > - Support for GPT4All and other LLM repositories
-   > - Build in feedback command for machine learning (/feedback :thumbsup: and /feedback :thumbsdown: 
+   > - Build in feedback command for machine learning (/feedback :thumbsup: and /feedback :thumbsdown:)
 ---
