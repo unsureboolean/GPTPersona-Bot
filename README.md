@@ -88,6 +88,17 @@
 3. Type `python main.py` to start the bot
 
 
+## Step 4 (Optional): Configure a Desktop icon
+
+1. Create a new shortcut on your desktop.
+
+2. Open the bot's root folder and copy the path to the GPTPersona.bat file.
+
+3. Open the desktop icon's properties and paste the path to the .bat file in the Target field (in quotes) -> "C:\Path\to\GPTPersona.bat".
+
+4. Enter the path to your desktop in the 'Start in' field and save.
+
+
 ### Please help by reporting bugs!
 
    > **Known bugs**
