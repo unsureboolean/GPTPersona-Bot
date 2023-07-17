@@ -92,11 +92,13 @@
 
 1. Create a new shortcut on your desktop.
 
-2. Open the bot's root folder and copy the path to the GPTPersona.bat file.
+2. In the dialogue box that opens, enter the path to the GPTPersona.bat file in the project's root folder.
 
-3. Open the desktop icon's properties and paste the path to the .bat file in the Target field (in quotes) -> "C:\Path\to\GPTPersona.bat".
+3. Name your shortcut.
 
-4. Enter the path to your desktop in the 'Start in' field and save.
+4. (Recommended) Change the desktop icon to something recognizable.
+
+5. Double-click desktop icon to launch/run bot.
 
 
 ### Please help by reporting bugs!
