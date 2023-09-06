@@ -1,0 +1,12 @@
+PERSONA_SETTINGS = {
+    "Dwight Schrute": {"nickname": "Dwight", "avatar_url": "https://static.wikia.nocookie.net/theoffice/images/0/08/Dwight14.jpg/"},
+    "Robert California": {"nickname": "Robert California", "avatar_url": "https://cdn.discordapp.com/app-icons/1100624403190009906/1f00535bffd1ee20e66b11667e2ec489.png?size=256"},
+    "Butters Stotch": {"nickname": "Butters", "avatar_url": "https://static.wikia.nocookie.net/the-south-park/images/0/06/ButtersStotch.png/"},
+    "Lizard King": {"nickname": "Lizard King", "avatar_url": "https://img.freepik.com/premium-photo/lizard-with-golden-crown-white-background_238683-43.jpg?w=826"},
+    "Standard chatGPT": {"ChatGPT": "Dwight", "avatar_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/120px-ChatGPT_logo.svg.png"},
+    "Sigma": {"nickname": "Sigma", "avatar_url": "https://i.ytimg.com/vi/n-DmAh0dObI/sddefault.jpg"},
+    "Jack Sparrow": {"nickname": "Capt. Jack", "avatar_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5VGjKNF3sRcZTGNc04ZexTjiKzivhnfgJT5k5RCPGSCS7liS2Q_qRI8ESrY71g7UYGaU&usqp=CAU"},
+    "Socrates": {"nickname": "Socrates", "avatar_url": "https://images6.fanpop.com/image/polls/1402000/1402364_1406642971731_full.jpg"},
+    "Sheldon Cooper": {"nickname": "Dr. Sheldon Cooper", "avatar_url": "https://static.wikia.nocookie.net/warner-bros-entertainment/images/2/2d/Sheldon_Cooper.jpg/"},
+    "Frank Reynolds": {"nickname": "Frank", "avatar_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_MSLbAMU0huJKccWsT7eWKh-B0wNf6gSrklBbqAVlNWH-ouBNoRPHFmzsMBtjKbh5kVk&usqp=CAU"},
+}
